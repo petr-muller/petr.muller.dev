@@ -9,13 +9,13 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 googleAnalytics = ""
 
 # Copyright
-copyright = "&copy;2020 Petr Muller"
+copyright = ""
 
 [params]
 
   # Metadata for search engines and social sharing
   author = "Petr Muller"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+  description = "Software Craftsman."
   shareImage = "images/social.jpg"
   twitterHandle = "czafri"
 
@@ -46,50 +46,38 @@ copyright = "&copy;2020 Petr Muller"
       heading = "Connect"
 
       [[params.links.list1.link]]
-        text = "Blog"
-        url = "#"
+        text = "Twitter"
+        url = "https://twitter.com/czafri"
 
       [[params.links.list1.link]]
-        text = "Email"
-        url = "#"
-
-      [[params.links.list1.link]]
-        text = "Newsletter"
-        url = "#"
+        text = "LinkedIn"
+        url = "https://www.linkedin.com/in/mullerpetr/"
 
   # Links List #2
   [[params.links]]
     [params.links.list2]
-      heading = "Social"
+      heading = "Software"
 
       [[params.links.list2.link]]
-        text = "Twitter"
-        url = "#"
+        text = "GitHub"
+        url = "https://github.com/petr-muller"
 
       [[params.links.list2.link]]
-        text = "Instagram"
-        url = "#"
-
-      [[params.links.list2.link]]
-        text = "Dribbble"
-        url = "#"
+        text = "dev.to"
+        url = "https://dev.to/czafri"
 
   # Links List #3
   [[params.links]]
     [params.links.list3]
-      heading = "Network"
+      heading = "Other Stuff"
 
       [[params.links.list3.link]]
-        text = "Link One"
-        url = "#"
+        text = "MtG"
+        url = "https://magic.afri.cz/"
 
       [[params.links.list3.link]]
-        text = "Link Two"
-        url = "#"
-
-      [[params.links.list3.link]]
-        text = "Link Three"
-        url = "#"
+        text = "VtES"
+        url = "https://vtes.afri.cz/"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
