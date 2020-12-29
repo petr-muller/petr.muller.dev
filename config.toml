@@ -13,6 +13,8 @@ copyright = ""
 
 [params]
 
+  gac = "G-DKWFTSLV29"
+
   # Metadata for search engines and social sharing
   author = "Petr Muller"
   description = "Software Craftsman."
