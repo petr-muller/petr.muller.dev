@@ -74,12 +74,12 @@ copyright = ""
       heading = "Other Stuff"
 
       [[params.links.list3.link]]
-        text = "MtG"
-        url = "https://magic.afri.cz/"
-
-      [[params.links.list3.link]]
         text = "VtES"
         url = "https://vtes.afri.cz/"
+
+      [[params.links.list3.link]]
+        text = "MtG"
+        url = "https://magic.afri.cz/"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
