@@ -77,10 +77,6 @@ copyright = ""
         text = "VtES"
         url = "https://vtes.afri.cz/"
 
-      [[params.links.list3.link]]
-        text = "MtG"
-        url = "https://magic.afri.cz/"
-
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
   # If you'd like to use the template without the attribution, you can check out
