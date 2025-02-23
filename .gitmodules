@@ -9,4 +9,4 @@
 	url = https://github.com/josephhutch/aether.git
 [submodule "themes/hugo-split-theme"]
 	path = themes/hugo-split-theme
-	url = https://github.com/escalate/hugo-split-theme.git
+	url = https://github.com/petr-muller/hugo-split-theme.git
