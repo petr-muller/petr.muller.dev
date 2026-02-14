@@ -12,13 +12,14 @@ jobs:
       run: |
         . ./.env
         echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_ENV
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
-      with:
-        hugo-version: '${{ env.HUGO_VERSION }}'
-        extended: true
-    - name: Cache Hugo
-      uses: actions/cache@v4
+    - name: Install Hugo
+      run: |
+        wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+        sudo dpkg -i ${{ runner.temp }}/hugo.deb
+    - name: Install Dart Sass
+      run: sudo snap install dart-sass
+    - name: Restore Hugo Cache
+      uses: actions/cache/restore@v4
       with:
         path: /tmp/hugo_cache
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -28,6 +29,11 @@ jobs:
       env:
         TZ: 'Europe/Prague'
       run: hugo --minify
+    - name: Save Hugo Cache
+      uses: actions/cache/save@v4
+      with:
+        path: /tmp/hugo_cache
+        key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
 
     - name: Install SSH Key
       uses: shimataro/ssh-key-action@v2
