@@ -3,9 +3,12 @@ title = "Petr Muller"
 tagline = "Software Craftsman"
 +++
 
-I dislike boxes. I engineer, develop, test and deliver programs. Build and run
-tools to help developers make better software. Soft spot for software that
-understands code and does something smart with it.
+I dislike boxes. I engineer, develop, test, and deliver software. Currently
+building systems to manage OpenShift quality signals at scale at Red Hat.
 
-I work for Red Hat, making sure that OpenShift customers can safely run the most
-recent code as soon as possible.
+My path here winds through OpenShift upgrade engineering, cloud-native CI/CD
+tooling, financial web development, and academic research in static analysis
+and formal methods.
+
+Building software is much more than coding — coding is just a skill. It's a
+collaborative activity, and I'm constantly learning to be better at all of it.
