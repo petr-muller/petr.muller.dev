@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Sources
-      uses: actions/checkout@v4
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       with:
         submodules: recursive
     - name: Read environment
@@ -19,7 +19,7 @@ jobs:
     - name: Install Dart Sass
       run: sudo snap install dart-sass
     - name: Restore Hugo Cache
-      uses: actions/cache/restore@v4
+      uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
       with:
         path: /tmp/hugo_cache
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -30,13 +30,13 @@ jobs:
         TZ: 'Europe/Prague'
       run: hugo --minify
     - name: Save Hugo Cache
-      uses: actions/cache/save@v4
+      uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
       with:
         path: /tmp/hugo_cache
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
 
     - name: Install SSH Key
-      uses: shimataro/ssh-key-action@v2
+      uses: shimataro/ssh-key-action@6b84f2e793b32fa0b03a379cadadec75cc539391 # v2.8.0
       with:
         key: ${{ secrets.DEPLOY_KEY }}
         known_hosts: 'placeholder'
